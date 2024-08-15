@@ -10,7 +10,8 @@
     "description": "A Discord theme implementing Deftu's design system",
     "private": true,
     "scripts": {
-        "build": "mkdir out/dist && sass --no-charset --no-source-map src:out/dist"
+        "build": "mkdir -p out/dist && sass -I node_modules --no-charset --no-source-map src:out/dist",
+        "release": "mkdir -p out/dist && sass -I node_modules --no-charset --no-source-map --styled=compressed src:out/dist && rm src/**/*.scss"
     },
     "devDependencies": {
         "sass": "^1.77.8"
