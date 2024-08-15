@@ -1,0 +1,4 @@
+// Change the color of the buttons from green to our brand color
+button[class*="vc-spotify-button"] {
+    --vc-spotify-green: #{$brand};
+}

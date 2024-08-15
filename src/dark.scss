@@ -1,0 +1,14 @@
+@use "sass:math";
+
+$text: #FDFBF9;
+$subtext0: #D2CDC6;
+$subtext1: #D2CDC666;
+$bg1: #28282B;
+$bg2: #212125;
+$bg3: #28282B;
+$textbox-markdown-syntax: lighten($bg1, 5%);
+
+@import "colors-static";
+@import "variables-generic";
+@import "variables-theme";
+@import "components";

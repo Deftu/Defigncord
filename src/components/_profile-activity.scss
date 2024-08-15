@@ -1,0 +1,6 @@
+// Change the color of the progress bar in the profile activity section
+div[class*="activityDetails_"] {
+    div[class*="barInner"] {
+        background-color: #{$brand};
+    }
+}

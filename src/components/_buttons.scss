@@ -1,0 +1,4 @@
+// Stop brand buttons from turbing blue when clicked
+button[class*="lookFilled_"][class*="colorBrand_"]:active {
+    background-color: $red;
+}

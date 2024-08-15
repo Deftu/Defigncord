@@ -1,0 +1,249 @@
+.theme-light,
+.theme-dark {
+    --text-normal: #{$text};
+    --text-muted: #{$subtext0};
+    --text-link: #{$brand};
+    --text-link-low-saturation: #{lighten($brand, math.div(10%, 2))};
+    --text-positive: #{$green};
+    --text-warning: #{$yellow};
+    --text-danger: #{$red};
+    --text-brand: #{$brand};
+
+    --background-primary: #{$bg1};
+    --background-secondary: #{$bg2};
+    --background-secondary-alt: #{darken($bg2, 2%)};
+    --background-tertiary: #{$bg3};
+    --background-accent: #{$brand};
+    --background-floating: #{darken($bg3, 2%)};
+    --background-nested-floating: #{$bg2};
+    --background-mobile-primary: #{$bg1};
+    --background-mobile-secondary: #{$bg2};
+
+    --chat-background: #{$bg1};
+    --chat-border: #{$bg3};
+    --chat-input-container-background: #{$bg1};
+
+    --background-modifier-hover: #{adjust-color($text, $alpha: -0.85)};
+    --background-modifier-selected: #{adjust-color($text, $alpha: -0.8)};
+    --background-modifier-accent: #{adjust-color($text, $alpha: -0.74)};
+    --background-modifier-active: #{adjust-color($text, $alpha: -0.83)};
+
+    --info-positive-background: #{adjust-color($green, $alpha: -0.85)};
+    --info-positive-foreground: #{$green};
+    --info-positive-text: #{$text};
+
+    --info-warning-background: #{adjust-color($yellow, $alpha: -0.85)};
+    --info-warning-foreground: #{$yellow};
+    --info-warning-text: #{$text};
+
+    --info-danger-background: #{adjust-color($red, $alpha: -0.85)};
+    --info-danger-foreground: #{$red};
+    --info-danger-text: #{$text};
+
+    --info-help-background: #{adjust-color($blue, $alpha: -0.85)};
+    --info-help-foreground: #{$blue};
+    --info-help-text: #{$text};
+
+    --status-positive-background: #{$green};
+    --status-positive-text: #{$bg1};
+
+    --status-warning-background: #{$yellow};
+    --status-warning-text: #{$bg1};
+
+    --status-danger-background: #{$red};
+    --status-danger-text: #{$bg1};
+
+    --status-danger: #{$red};
+    --status-positive: #{$green};
+    --status-warning: #{$yellow};
+
+    // the next 3 are present in the voice check in settings
+    --status-yellow-400: #{$yellow};
+    --status-green-600: #{$green};
+    --primary-dark-600: #{$bg1};
+
+    // radioBar borders
+    --status-yellow-560: #{$yellow};
+    --status-red-500: #{$red};
+
+    --status-red-530: #{$red};
+
+    // colorWarning
+    --status-yellow-500: #{$yellow};
+    --black-500: #{$bg3};
+
+    --green-360: #{$green};
+    --yellow-360: #{$yellow};
+    --yellow-300: #{$yellow};
+    --red-400: #{$red};
+
+    --brand-500: #{$brand};
+    --brand-560: #{darken($brand, math.div(20%, 2))};
+
+    --primary-100: #{$subtext1};
+    --primary-300: #{$subtext1};
+    --primary-400: #{$subtext1};
+    --primary-dark-700: #{$bg3};
+    --primary-800: #{$bg3};
+
+    // update discord icon
+    --status-green-560: #{$green};
+
+    --white-400: #{$text};
+    --white-500: #{$text};
+
+    --guild-boosting-pink: #{$pink};
+    --premium-perk-purple: #{$pink};
+    --premium-perk-yellow: #{$yellow};
+    --premium-perk-dark-blue: #{darken($blue, math.div(20%, 2))};
+    --premium-perk-light-blue: #{lighten($blue, math.div(10%, 2))};
+    --premium-perk-blue: #{$blue};
+    --premium-perk-green: #{$green};
+    --premium-perk-pink: #{$pink};
+    --premium-perk-orange: #{$peach};
+
+    --status-green-400: #{$green};
+
+    --button-danger-background: #{$red};
+    --button-danger-background-hover: #{darken($red, math.div(10%, 2))};
+    --button-danger-background-active: #{darken($brand, math.div(15%, 2))};
+    --button-danger-background-disabled: #{$red};
+
+    --button-positive-background: #{$green};
+    --button-positive-background-hover: #{darken($green, math.div(10%, 2))};
+    --button-positive-background-active: #{darken($green, math.div(15%, 2))};
+    --button-positive-background-disabled: #{$green};
+
+    --button-secondary-background: #{$bg3};
+    --button-secondary-background-hover: #{darken($bg3, math.div(10%, 2))};
+    --button-secondary-background-active: #{darken($bg3, math.div(10%, 2))};
+    --button-secondary-background-disabled: #{$bg3};
+
+    --button-outline-danger-text: #{$text};
+    --button-outline-danger-border: #{$red};
+    --button-outline-danger-background: transparent;
+    --button-outline-danger-background-hover: #{darken($red, math.div(5%, 2))};
+    --button-outline-danger-text-hover: #{$bg1};
+    --button-outline-danger-border-hover: #{darken($red, math.div(5%, 2))};
+    --button-outline-danger-background-active: #{darken($red, math.div(10%, 2))};
+    --button-outline-danger-text-active: #{$bg1};
+    --button-outline-danger-border-active: #{darken($red, math.div(5%, 2))};
+
+    --button-outline-positive-text: #{$text};
+    --button-outline-positive-border: #{$green};
+    --button-outline-positive-background: transparent;
+    --button-outline-positive-background-hover: #{darken(
+            $green,
+            math.div(5%, 2)
+        )};
+    --button-outline-positive-text-hover: #{$bg1};
+    --button-outline-positive-border-hover: #{darken($green, math.div(5%, 2))};
+    --button-outline-positive-background-active: #{darken(
+            $green,
+            math.div(10%, 2)
+        )};
+    --button-outline-positive-text-active: #{$bg1};
+    --button-outline-positive-border-active: #{darken($green, math.div(5%, 2))};
+
+    --button-outline-brand-text: #{$text};
+    --button-outline-brand-border: #{$brand};
+    --button-outline-brand-background: transparent;
+    --button-outline-brand-background-hover: #{darken($brand, math.div(5%, 2))};
+    --button-outline-brand-text-hover: #{$bg1};
+    --button-outline-brand-border-hover: #{darken($brand, math.div(5%, 2))};
+    --button-outline-brand-background-active: #{darken($brand, math.div(10%, 2))};
+    --button-outline-brand-text-active: #{$bg1};
+    --button-outline-brand-border-active: #{darken($brand, math.div(5%, 2))};
+
+    --button-outline-primary-text: #{$text};
+    --button-outline-primary-border: #{$bg2};
+    --button-outline-primary-background: transparent;
+    --button-outline-primary-background-hover: #{darken(
+            $bg2,
+            math.div(5%, 2)
+        )};
+    --button-outline-primary-text-hover: #{$bg1};
+    --button-outline-primary-border-hover: #{darken($bg2, math.div(5%, 2))};
+    --button-outline-primary-background-active: #{darken(
+            $bg2,
+            math.div(10%, 2)
+        )};
+    --button-outline-primary-text-active: #{$bg1};
+    --button-outline-primary-border-active: #{darken($bg2, math.div(5%, 2))};
+
+    --modal-background: #{$bg1};
+    --modal-footer-background: #{$bg3};
+
+    --scrollbar-thin-thumb: #{$brand};
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #{$brand};
+    --scrollbar-auto-track: #{$bg3};
+
+    --scrollbar-auto-scrollbar-color-thumb: #{$brand};
+    --scrollbar-auto-scrollbar-color-track: #{$bg3};
+
+    --input-background: #{$bg3};
+    --input-placeholder-text: #{$subtext1};
+
+    --logo-primary: #{$text};
+
+    --control-brand-foreground: #{$brand};
+    --control-brand-foreground-new: #{$brand};
+    --mention-foreground: #{$brand};
+    --mention-background: #{adjust-color($brand, $alpha: -0.7)};
+
+    --background-mentioned: #{adjust-color($yellow, $alpha: -0.9)};
+    --background-mentioned-hover: #{adjust-color($yellow, $alpha: -0.92)};
+    --background-message-hover: #{adjust-color($bg3, $alpha: -0.75)};
+    --background-message-automod: #{adjust-color($rosewater, $alpha: -0.95)};
+    --background-message-automod-hover: #{adjust-color($rosewater, $alpha: -0.9)};
+    --background-message-highlight: #{adjust-color($brand, $alpha: -0.9)};
+    --background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.92)};
+
+    --channels-default: #{darken($subtext0, 5%)};
+    --channel-icon: #{darken($subtext0, 5%)};
+    --channel-text-area-placeholder: #{adjust-color($text, $alpha: -0.5)};
+    --channeltextarea-background: #{$bg2};
+
+    --activity-card-background: #{$bg3};
+
+    --textbox-markdown-syntax: #{$textbox-markdown-syntax};
+
+    --spoiler-revealed-background: #{$bg2};
+    --spoiler-hidden-background: #{$bg2};
+
+    --android-navigation-bar-background: #{$bg3};
+    --android-ripple: #{adjust-color($bg3, $alpha: -0.7)};
+
+    --deprecated-card-bg: #{adjust-color($bg3, $alpha: -0.4)};
+    --deprecated-card-editable-bg: #{adjust-color($bg3, $alpha: -0.7)};
+
+    --bg-mod-faint: #{$bg2};
+
+    --deprecated-store-bg: #{$bg1};
+    --deprecated-quickswitcher-input-background: #{darken(
+            $bg2,
+            math.div(10%, 2)
+        )};
+    --deprecated-quickswitcher-input-placeholder: #{adjust-color(
+            $bg3,
+            $alpha: -0.7
+        )};
+    --deprecated-text-input-bg: #{$bg3};
+    --deprecated-text-input-border: #{adjust-color($bg3, $alpha: -0.7)};
+    --deprecated-text-input-border-hover: #{darken($bg3, math.div(10%, 2))};
+    --deprecated-text-input-border-disabled: #{$bg2};
+    --deprecated-text-input-prefix: #{$subtext0};
+
+    --focus-primary: #{$brand};
+
+    --interactive-normal: #{$text};
+    --interactive-muted: #{adjust-color($text, $alpha: -0.7)};
+    --interactive-hover: #{$text};
+    --interactive-active: #{$text};
+
+    --search-popout-option-non-text-color: #{$subtext0};
+
+    --__spoiler-background-color--hidden: #{$bg2};
+    --__spoiler-warning-background-color: #{lighten($bg2, 5%)};
+}
