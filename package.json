@@ -3,7 +3,8 @@
     "license": "LGPL-3.0-or-later",
     "name": "defigncord",
     "version": "0.1.0",
-    "description": "",
+    "description": "A Discord theme implementing Deftu's design system",
+    "private": true,
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     }
