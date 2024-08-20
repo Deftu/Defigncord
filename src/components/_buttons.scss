@@ -2,3 +2,8 @@
 button[class*="lookFilled_"][class*="colorBrand_"]:active {
     background-color: $red;
 }
+
+// Remove apps button from text area
+div[class*="channelAppLauncher_"] {
+    display: none;
+}
