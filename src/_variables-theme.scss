@@ -158,16 +158,10 @@
     --button-outline-primary-text: #{$text};
     --button-outline-primary-border: #{$bg2};
     --button-outline-primary-background: transparent;
-    --button-outline-primary-background-hover: #{darken(
-            $bg2,
-            math.div(5%, 2)
-        )};
+    --button-outline-primary-background-hover: #{darken($bg2, math.div(5%, 2))};
     --button-outline-primary-text-hover: #{$bg1};
     --button-outline-primary-border-hover: #{darken($bg2, math.div(5%, 2))};
-    --button-outline-primary-background-active: #{darken(
-            $bg2,
-            math.div(10%, 2)
-        )};
+    --button-outline-primary-background-active: #{darken($bg2, math.div(10%, 2))};
     --button-outline-primary-text-active: #{$bg1};
     --button-outline-primary-border-active: #{darken($bg2, math.div(5%, 2))};
 
