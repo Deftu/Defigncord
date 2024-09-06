@@ -25,6 +25,11 @@ div[class*="channelTextArea_"] {
             min-height: 53px;
 
             border-top: 1px solid var(--background-modifier-accent);
+
+            div[class*="attachWrapper_"] {
+                display: flex;
+                align-items: center;
+            }
         }
     }
 
