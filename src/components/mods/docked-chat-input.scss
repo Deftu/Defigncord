@@ -1,6 +1,25 @@
 main[class*="chatContent"] form {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+
     padding: 0;
     margin: 0;
+
+    &::before {
+        height: 24px;
+    }
+}
+
+div[class*="channelBottomArea_*"] {
+    flex: 1;
+}
+
+div[class*="typing_*"] {
+    top: -24px;
+    bottom: unset;
+    right: unset;
+    left: unset;
 }
 
 div[class*="channelTextArea_"] {
