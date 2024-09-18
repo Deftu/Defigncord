@@ -1,4 +1,4 @@
-main[class*="chatContent"] form {
+main[class*="chatContent_"] form {
     position: relative;
     display: flex;
     flex-direction: column-reverse;
@@ -11,11 +11,11 @@ main[class*="chatContent"] form {
     }
 }
 
-div[class*="channelBottomArea_*"] {
+div[class*="channelBottomBarArea_"] {
     flex: 1;
 }
 
-div[class*="typing_*"] {
+div[class*="typing_"] {
     top: -24px;
     bottom: unset;
     right: unset;
